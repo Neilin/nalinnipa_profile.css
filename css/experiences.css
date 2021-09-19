@@ -1,0 +1,82 @@
+/* CSS files --> experiences.html */
+body{
+    background-color: rgb(250, 235, 224);
+}
+.table-menu{
+    width:100%; 
+    text-align: center;
+    background-color:rgb(250, 235, 224) ;
+}
+h1{
+    text-align: center; 
+    font-family: cursive;
+    background-color: rgb(201, 228, 197);
+} 
+h4{
+    text-align: center; 
+    font-family: Aclonica; 
+    font-weight: normal;
+}
+h5{ 
+    text-align: center; 
+    font-family: Aclonica; 
+    font-weight: normal;
+}
+.table-content{
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: rgb(201, 228, 197);
+}
+.ul-circle{
+    list-style-type:circle;
+    background-color: rgb(230, 196, 192);
+} 
+.ul-disc{
+    list-style-type:disc;
+    background-color: rgb(230, 196, 192);
+
+}
+/*style button*/
+button{
+    padding: 5px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border:0px;
+    background: transparent;
+    position: relative;
+    margin: 20px;
+    transition: all 0.25s ease;
+
+}
+.btn-1{
+    background: rgb(230, 196, 192);
+    color: white;
+    border-radius: 30px;
+    transition: all 0.25 ease;
+}
+.btn-1:hover{
+    transform: translate(-12px,-12px);
+}
+.btn-1:hover::before{
+    transform: translate(12px,12px);
+}
+.btn-1:hover::after{
+    transform: translate(6px,6px);
+}
+.btn-1::after,.btn-1::before{
+    content: '''';
+    position: absolute;
+    opacity: 0.3;
+    border-radius: inherit;
+    background:rgb(230, 196, 192) ;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+
+body{
+    font-family: 'Mitr', sans-serif;
+}
